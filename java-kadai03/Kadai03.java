@@ -19,14 +19,14 @@ class Kadai03 {
             }
         } catch (IOException e) {
             e.printStackTrace();
-
         }
         
         List<String> ls2 = ls.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
         String []ls3 = new String[3];
+
         for(int i = 0; i < 6; i++){
         ls3 = (ls2.get(i)).split(",",4);        
         System.out.println(ls3[1] + "," + ls3[2] + "," + ls3[0] + "," +ls3[3]);
-    }
+        }
     }
 }
